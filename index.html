@@ -29,9 +29,24 @@
         
         
         input{
+            
             padding: 10px;
             margin: 3px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: transparent;
             
+        }
+
+        .input-text:hover{
+            background-color: #ffffff45;
+            border-radius: 7px;
+            
+        }
+
+        .input-text{
+            color: white;
         }
         .input{
             width: 100%;
@@ -59,13 +74,13 @@
             <p>
                 <!-- <label for="iNome">Nome:</label> -->
 
-                 <input type="text" name="Nome" id="iNome" placeholder="Usuário" required minlength="10" maxlength="30">
+                 <input type="text" name="Nome" id="iNome" placeholder="Usuário" required minlength="10" maxlength="30" class="input-text">
             </p>
 
             <p>
                 <!-- <label for="isenha">Senha:</label> -->
 
-                <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8" maxlength="20">
+                <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8" maxlength="20" class="input-text">
             </p>
 
             <input type="submit" value="Enviar" class="input">
